@@ -1,0 +1,19 @@
+# Backup
+*~
+.*~
+\#*
+
+# Python Virtual Environment
+matrix
+
+# Python files
+__pycache__
+*.pyc
+
+# Archives
+*.zip
+*.tar.gz
+
+# Mac files
+.DS_Store
+
