@@ -35,6 +35,7 @@ make install
 
 ### Configure Mosquitto
 
+* Clone the [Mosquitto git repo](https://github.com/eclipse/mosquitto)
 * I used the CMake GUI
 * Selected the mosquitto source directory as source
 * Created a `build` subdirectory and selected as target
