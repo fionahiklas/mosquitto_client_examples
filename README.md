@@ -3,8 +3,37 @@
 Trying out the [Mosquitto](https://github.com/eclipse/mosquitto) MQTT broker.
 
 
+## Quickstart
 
-## Building from source
+Having installed the Mosquitto distribution, either by compiling from source or using one of the binaries, start the broker using the following command
+
+```
+mosquitto -v -c conf/mosquitto.conf
+```
+
+The broker should start listening on port 1883.
+
+In another terminal run the following
+
+```
+mosquitto_sub -t test_topic
+```
+
+And finally, in another terminal run this command
+
+```
+mosquitto_pub -t test_topic -m "Hello World"
+```
+
+This should echo the message into the terminal running `mosquitto_sub`
+
+
+
+
+## Building Mosquitto from source
+
+I have a Mac, I don't like relying on brew or other package managers for MacOS (I'm just being silly and awkward) so I prefer to built code from source.
+
 
 ### Prerequisites
 
